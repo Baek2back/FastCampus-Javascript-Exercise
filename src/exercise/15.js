@@ -9,7 +9,7 @@ for (var i = 1; i <= line; i++) {
   emptyCount = line - i;
   starCount = 2 * i - 1;
   ret += empty.repeat(emptyCount) + star.repeat(starCount);
-  ret = ret.concat('\n');
+  ret = i === line ? ret : ret.concat('\n');
 }
 console.log(ret);
 

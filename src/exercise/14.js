@@ -6,7 +6,7 @@ var ret = '';
 for (var i = 1; i <= line; i++) {
   ret += empty.repeat(line - i);
   ret += star.repeat(i);
-  ret = ret.concat('\n');
+  ret = i === line ? ret : ret.concat('\n');
 }
 console.log(ret);
 

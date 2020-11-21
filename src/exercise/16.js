@@ -2,16 +2,16 @@ var line = 5;
 const [empty, star] = [' ', '*'];
 
 // 1.
-var ret = '';
-var emptyCount;
-var starCount;
-for (var i = line; i >= 1; i--) {
-  emptyCount = line - i;
-  starCount = 2 * i - 1;
-  ret += empty.repeat(emptyCount) + star.repeat(starCount);
-  ret = ret.concat('\n');
-}
-console.log(ret);
+// var ret = '';
+// var emptyCount;
+// var starCount;
+// for (var i = line; i >= 1; i--) {
+//   emptyCount = line - i;
+//   starCount = 2 * i - 1;
+//   ret += empty.repeat(emptyCount) + star.repeat(starCount);
+//   ret = i === 1 ? ret : ret.concat('\n');
+// }
+// console.log(ret);
 
 // utils
 const rangeFromOneToLimit = (limit) => {

@@ -4,7 +4,7 @@ var star = '*';
 var ret = '';
 for (var i = line; i >= 1; i--) {
   ret += star.repeat(i);
-  ret = ret.concat('\n');
+  ret = i === 1 ? ret : ret.concat('\n');
 }
 console.log(ret);
 

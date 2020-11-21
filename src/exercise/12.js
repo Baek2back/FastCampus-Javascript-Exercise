@@ -1,12 +1,12 @@
 // 1.
 var line = 5;
-var ret = '';
 var star = '*';
 var empty = ' ';
+var ret = '';
 for (var i = line; i >= 1; i--) {
   ret += empty.repeat(line - i);
   ret += star.repeat(i);
-  ret = ret.concat('\n');
+  ret = i === 1 ? ret : ret.concat('\n');
 }
 console.log(ret);
 
