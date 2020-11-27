@@ -11,6 +11,9 @@ function binarySearch(array, target) {
   return -1;
 }
 function binarySearch(array, target, start = 0, end = array.length - 1) {
+  // before ES6
+  // start = start || 0;
+  // end = end || array.length - 1;
   var mid = Math.floor((start + end) / 2);
   if (start > end) return -1;
   if (array[mid] === target) return mid;
