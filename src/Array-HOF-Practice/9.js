@@ -6,7 +6,7 @@ const todos = [
 
 function getMaxId() {
   const candidates = todos.map(todo => todo.id);
-  return Math.max(...candidates);
+  return candidates.length && Math.max(...candidates);
 }
 
 console.log(getMaxId()); // 3
