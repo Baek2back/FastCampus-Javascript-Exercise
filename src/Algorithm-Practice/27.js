@@ -14,7 +14,7 @@ function specialSort(array) {
   return [
     ...negatives.sort((a, b) => b - a),
     0,
-    ...positives.sort((a, b) => a - b)
+    ...positives.sort((a, b) => a - b),
   ];
 }
 

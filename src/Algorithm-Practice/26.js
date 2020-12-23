@@ -5,7 +5,7 @@ function findMinDistance(array) {
     []
   );
   const sortedCoordinates = [...coordinates]
-    .map(coordinate => {
+    .map((coordinate) => {
       const [x, y] = coordinate;
       return [...coordinate, Math.abs(x - y)];
     })
@@ -15,11 +15,11 @@ function findMinDistance(array) {
       return aDistance - bDistance;
     });
   const [, , minDistance] = sortedCoordinates[0];
-  const minDistanceCoordinates = sortedCoordinates.filter(status => {
+  const minDistanceCoordinates = sortedCoordinates.filter((status) => {
     const [, , distance] = status;
     return minDistance === distance;
   });
-  return minDistanceCoordinates.map(status => {
+  return minDistanceCoordinates.map((status) => {
     const [x, y] = status;
     return [x, y];
   });
