@@ -25,6 +25,9 @@
       "max-classes-per-file": 0,
       "arrow-parens": ["error", "as-needed"], // a => {}
       "no-restricted-syntax": [0, "ForOfStatement"],
-      "no-param-reassign": ["error", { "props": false }]
+      "no-param-reassign": ["error", { "props": false }],
+      "implicit-arrow-linebreak": 0,
+      "function-paren-newline": 0,
+      "no-confusing-arrow": 0
     }
   }
